@@ -1,0 +1,21 @@
+Steps:
+
+Step1: Define the Story Template:
+Start by writing a short story with placeholders for different types of words (nouns, verbs, adjectives, adverbs, etc.). These placeholders will be replaced by the user's input later
+
+Step2: Create a Dictionary to Store User Input:
+Create an empty dictionary called words to store the words the user enters. The keys of this dictionary will be the word types (e.g., "adjective", "noun"), and the values will be lists of the words entered by the user for that type.
+
+Step3: Prompt the User for Words:
+Use a loop to iterate through the word types you need (e.g., "adjective", "noun", "verb").
+Inside the loop, use the input() function to prompt the user to enter a word of the current type.
+Store the user's input in the words dictionary. Because we want to handle multiple inputs for the same word type, we will use a list to store the words:
+
+Step4: Replace Placeholders with User Input:
+Create a copy of the story_template so you don't modify the original template.
+Iterate through the words dictionary.
+For each word type, use the replace() method to replace the corresponding placeholder in the story with the user's input.
+Because we store the words as lists, we need to handle the case where the same word type appears multiple times in the template. We use a while loop and an index to cycle through the list of words
+
+Step5: Print the Final Story:
+Print the completed story with the user's words inserted.
